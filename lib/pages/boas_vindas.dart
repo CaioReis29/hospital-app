@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hospital_app/pages/cadastro.dart';
+import 'package:hospital_app/pages/login.dart';
 
 class BoasVindas extends StatefulWidget {
   const BoasVindas({super.key});
@@ -17,27 +19,7 @@ class _BoasVindasState extends State<BoasVindas> {
         child: Column(
           children: [
             SizedBox(
-              height: 20,
-            ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: TextButton(
-                  onPressed: () {
-                    // Navigator.push(context, MaterialPageRoute(
-                    //   builder: (context) =>
-                    //   ),
-                    //   );
-                  },
-                  child: Text(
-                    'FECHAR',
-                    style: TextStyle(
-                      color: Color(0xFF68A797),
-                      fontSize: 20,
-                    ),
-                  )),
-            ),
-            SizedBox(
-              height: 50,
+              height: 70,
             ),
             Padding(
               padding: EdgeInsets.all(20),
@@ -81,16 +63,16 @@ class _BoasVindasState extends State<BoasVindas> {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(context, MaterialPageRoute(
-                      //   builder: (context) =>
-                      //   ),
-                      //   );
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => Login(),
+                        ),
+                        );
                     },
                     child: Padding(
                       padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                          EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                       child: Text(
-                        'Logar',
+                        'Entrar',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 22,
@@ -103,13 +85,14 @@ class _BoasVindasState extends State<BoasVindas> {
                 Material(
                   color: Colors.white,
                   shadowColor: Color(0xFF68A797),
+                  elevation: 4,
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(context, MaterialPageRoute(
-                      //   builder: (context) =>
-                      //   ),
-                      //   );
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => Cadastro(),
+                        ),
+                        );
                     },
                     child: Padding(
                       padding:
