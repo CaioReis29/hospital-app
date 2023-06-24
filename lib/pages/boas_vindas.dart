@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hospital_app/pages/cadastro.dart';
 import 'package:hospital_app/pages/login.dart';
+import 'package:hospital_app/widgets/navbar_rotas.dart';
 
 class BoasVindas extends StatefulWidget {
   const BoasVindas({super.key});
@@ -18,6 +19,23 @@ class _BoasVindasState extends State<BoasVindas> {
         height: MediaQuery.of(context).size.height,
         child: Column(
           children: [
+            SizedBox(height: 15,),
+            Align(
+              alignment: Alignment.centerRight,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => NavbarRotas(),
+                    ));
+                }, 
+                child: Text(
+                  'Fechar',
+                  style: TextStyle(
+                    color: Color(0xFF68A797),
+                    fontSize: 20,
+                  ),
+                )),
+            ),
             SizedBox(
               height: 70,
             ),
