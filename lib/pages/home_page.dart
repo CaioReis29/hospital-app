@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hospital_app/pages/agendamento.dart';
 
 class HomePage extends StatelessWidget {
   List sintomas = [
@@ -46,19 +47,19 @@ class HomePage extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Olá, Caio Reis!",
-                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
-                ),
-                CircleAvatar(
-                  radius: 25,
-                  backgroundImage: AssetImage("assets/img/meu_perfil.jpg"),
-                ),
-              ],
-            ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Olá, Caio Reis!",
+                    style: TextStyle(fontSize: 35, fontWeight: FontWeight.w500),
+                  ),
+                  CircleAvatar(
+                    radius: 25,
+                    backgroundImage: AssetImage("assets/img/meu_perfil.jpg"),
+                  ),
+                ],
+              ),
           ),
           SizedBox(
             height: 25,
@@ -69,7 +70,8 @@ class HomePage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                  margin: EdgeInsets.symmetric(horizontal: 2),
                   decoration: BoxDecoration(
                     color: Color(0xFF68A797),
                     borderRadius: BorderRadius.circular(10),
@@ -93,18 +95,21 @@ class HomePage extends StatelessWidget {
                         child: Icon(
                           Icons.add,
                           color: Color(0xFF68A797),
-                          size: 35,
+                          size: 40,
                         ),
                       ),
                       SizedBox(
                         height: 30,
                       ),
-                      Text(
-                        'Visita Clínica',
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500),
+                      Container(
+                        width: 150,
+                        child: Text(
+                          'Visita Clínica',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500),
+                        ),
                       ),
                       SizedBox(
                         height: 5,
@@ -122,7 +127,7 @@ class HomePage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
@@ -138,7 +143,8 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        margin: EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 224, 250, 242),
                           shape: BoxShape.circle,
@@ -146,11 +152,11 @@ class HomePage extends StatelessWidget {
                         child: Icon(
                           color: Color(0xFF68A797),
                           Icons.home,
-                          size: 35,
+                          size: 30,
                         ),
                       ),
                       SizedBox(
-                        height: 30,
+                        height: 20,
                       ),
                       Text(
                         'Visita Domiciliar',
@@ -162,12 +168,15 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: 5,
                       ),
-                      Text(
-                        'Marque consulta em casa',
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        style: TextStyle(
-                          color: Colors.black54,
+                      Container(
+                        width: 150,
+                        child: Text(
+                          'Marque consulta em casa',
+                          overflow: TextOverflow.clip,
+                          maxLines: 2,
+                          style: TextStyle(
+                            color: Colors.black54,
+                          ),
                         ),
                       ),
                     ],
@@ -241,10 +250,17 @@ class HomePage extends StatelessWidget {
               physics: NeverScrollableScrollPhysics(), 
             itemBuilder: (context, index) {
               return InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Agendamento(),
+                    ),
+                  );
+                },
                 child: Container(
                   margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.symmetric(vertical: 15),
+                  padding: EdgeInsets.symmetric(vertical: 10),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
@@ -266,7 +282,7 @@ class HomePage extends StatelessWidget {
                       Text(
                         nomeMedicos[index],
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 15,
                           fontWeight: FontWeight.w500,
                           color: Colors.black54
                         ),

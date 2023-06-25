@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_app/pages/calendario.dart';
+import 'package:hospital_app/pages/chats.dart';
+import 'package:hospital_app/pages/configuracoes.dart';
 import 'package:hospital_app/pages/home_page.dart';
 
 class NavbarRotas extends StatefulWidget {
@@ -14,9 +17,9 @@ class _NavbarRotasState extends State<NavbarRotas> {
 
   final _paginas = [
     HomePage(),
-    Container(),
-    Container(),
-    Container(),
+    Chats(),
+    Calendario(),
+    Configuracoes(),
   ];
 
   @override
