@@ -33,7 +33,7 @@
 - FLUTTER SDK
 - Um device físico (seu celular conectado por um USB) ou um emulador (como o android studio)
 
-## Quer testar as telas do seu próprio celular? Acesse esse link e instale meu APK:
+## Quer testar as telas no seu próprio celular? Acesse esse link e instale meu APK:
 - https://www.mediafire.com/file/lvsquego2mnq3v9/hospital_APP_teste.apk/file
 
 ## Dependências do PUBSPEC: 
