@@ -237,8 +237,10 @@ class Agendamento extends StatelessWidget {
                                     ),
                                     title: Text(
                                       nomeMedicos[index],
+                                      maxLines: 2,
                                       style: TextStyle(
-                                        fontWeight: FontWeight.bold
+                                        fontWeight: FontWeight.bold,
+                                        overflow: TextOverflow.ellipsis,
                                       ),
                                     ),
                                     subtitle: Text('23 Horas Atrás'),
