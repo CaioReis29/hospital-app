@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hospital_app/pages/calendario.dart';
+import 'package:hospital_app/pages/agendamentos.dart';
 import 'package:hospital_app/pages/chats.dart';
 import 'package:hospital_app/pages/configuracoes.dart';
 import 'package:hospital_app/pages/home_page.dart';
@@ -53,7 +53,7 @@ class _NavbarRotasState extends State<NavbarRotas> {
                   icon: Icon(CupertinoIcons.chat_bubble_text_fill),
                   label: 'Mensagens'),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.calendar_month), label: 'Agenda'),
+                  icon: Icon(Icons.calendar_month), label: 'Agendados'),
               BottomNavigationBarItem(
                   icon: Icon(Icons.settings), label: 'Configurações'),
             ]),

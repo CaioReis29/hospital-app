@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_app/pages/agendamento.dart';
+import 'package:hospital_app/pages/visualizar_medico.dart';
 
 class HomePage extends StatelessWidget {
   List sintomas = [
