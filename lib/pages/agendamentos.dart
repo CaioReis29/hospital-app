@@ -57,7 +57,7 @@ class _CalendarioState extends State<Calendario> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+                          EdgeInsets.symmetric(vertical: 12, horizontal: 10),
                       decoration: BoxDecoration(
                         color: _botaoIndex == 0
                             ? Color(0xFF68A797)
