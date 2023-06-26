@@ -43,7 +43,7 @@
 
 ```bash
   # Clone o Repositório
-  $ git clone https://github.com/SOUT/ProjetoMobile.git](https://github.com/CaioReis29/hospital-app.git
+  $ git https://github.com/CaioReis29/hospital-app.git
 ```
 ```bash
   # Entre na pasta clonada
