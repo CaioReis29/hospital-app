@@ -1,18 +1,30 @@
 <h1 align="center">:file_cabinet: Projeto HOSPITAL-APP</h1>
  
 <div style="overflow: auto;">
+ 
+<div style="text-align: center"><table><tr>
+  <td style="text-align: center, width: 180">
+    
+  ![gif1](https://github.com/CaioReis29/hospital-app/assets/114621145/319126bb-e760-4b8f-8586-5724d7ba2223)
+    
+  </td>
+  <td style="text-align: center, width: 180">
+    
+  ![gif2](https://github.com/CaioReis29/hospital-app/assets/114621145/35484385-49ac-4a27-99e9-b7d80a7f0dd1)
 
-<img src="https://github.com/CaioReis29/hospital-app/assets/114621145/e91c48a7-2116-40bc-9d58-1de66adb6407" alt="hospital app tela" style="height: 700px; width: 325px; float: left;">
+    
+  </td>
 
-<img src="https://github.com/CaioReis29/hospital-app/assets/114621145/8dc7e3a3-5e23-4e10-b680-55300f1c9532" alt="hospital app tela" style="height: 700px; width: 325px; float: left;">
+  <td style="text-align: center, width: 180">
+    
+  ![gif3](https://github.com/CaioReis29/hospital-app/assets/114621145/bebd346c-ce47-45ef-be2e-268c42948b0a)
 
-<img src="https://github.com/CaioReis29/hospital-app/assets/114621145/20f498a9-30f6-4ee4-a40a-7fcb63429738" alt="hospital app tela" style="height: 700px; width: 325px; float: right;">
+    
+  </td>
 
-<img src="https://github.com/CaioReis29/hospital-app/assets/114621145/cc6b62e2-1fb7-4c8a-b087-a4bf25a4653c" alt="hospital app tela" style="height: 700px; width: 325px; float: right;">
 
-<img src="https://github.com/CaioReis29/hospital-app/assets/114621145/03dba625-5020-4f0e-9e47-51570a4b35db" alt="hospital app tela" style="height: 700px; width: 325px; float: right;">
-
-<img src="https://github.com/CaioReis29/hospital-app/assets/114621145/1991e472-11f5-4ef1-8614-bcd2b1ff67c4" alt="hospital app tela" style="height: 700px; width: 325px; float: right;">
+</tr></table></div>
+ 
   
 </div>
 <div style="clear: both;"></div>
