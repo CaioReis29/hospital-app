@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_app/widgets/consultas_canceladas.dart';
-import 'package:hospital_app/widgets/consultas_completas.dart';
-import 'package:hospital_app/widgets/consultas_proximas.dart';
+import 'package:hospital_app/widgets/consult_canceled.dart';
+import 'package:hospital_app/widgets/consult_completed.dart';
+import 'package:hospital_app/widgets/consult_coming.dart';
 
 class Calendario extends StatefulWidget {
   const Calendario({super.key});
@@ -14,20 +14,20 @@ class _CalendarioState extends State<Calendario> {
   int _botaoIndex = 0;
 
   final _agendaWidgets = [
-    ConsultasProximas(),
-    ConsultasCompletas(),
-    ConsultasCanceladas(),
+    const ConsultasProximas(),
+    const ConsultasCompletas(),
+    const ConsultasCanceladas(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.only(top: 40),
+        padding: const EdgeInsets.only(top: 40),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: Text(
                 'Agendamentos',
@@ -37,14 +37,14 @@ class _CalendarioState extends State<Calendario> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
-              padding: EdgeInsets.all(5),
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.all(5),
+              margin: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
-                  color: Color(0xFFF4F6FA),
+                  color: const Color(0xFFF4F6FA),
                   borderRadius: BorderRadius.circular(10)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -57,10 +57,10 @@ class _CalendarioState extends State<Calendario> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 10),
+                          const EdgeInsets.symmetric(vertical: 12, horizontal: 10),
                       decoration: BoxDecoration(
                         color: _botaoIndex == 0
-                            ? Color(0xFF68A797)
+                            ? const Color(0xFF68A797)
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -85,10 +85,10 @@ class _CalendarioState extends State<Calendario> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+                          const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
                       decoration: BoxDecoration(
                         color: _botaoIndex == 1
-                            ? Color(0xFF68A797)
+                            ? const Color(0xFF68A797)
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -113,10 +113,10 @@ class _CalendarioState extends State<Calendario> {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+                          const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
                       decoration: BoxDecoration(
                         color: _botaoIndex == 2
-                            ? Color(0xFF68A797)
+                            ? const Color(0xFF68A797)
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -136,7 +136,7 @@ class _CalendarioState extends State<Calendario> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             _agendaWidgets[_botaoIndex],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_app/pages/cadastro.dart';
+import 'package:hospital_app/pages/singup.dart';
 import 'package:hospital_app/pages/login.dart';
-import 'package:hospital_app/widgets/navbar_rotas.dart';
+import 'package:hospital_app/widgets/navbar_routes.dart';
 
 class BoasVindas extends StatefulWidget {
   const BoasVindas({super.key});
@@ -14,21 +14,21 @@ class _BoasVindasState extends State<BoasVindas> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Container(
+      child: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Column(
           children: [
-            SizedBox(height: 15,),
+            const SizedBox(height: 15,),
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(
-                    builder: (context) => NavbarRotas(),
+                    builder: (context) => const NavbarRotas(),
                     ));
                 }, 
-                child: Text(
+                child: const Text(
                   'Fechar',
                   style: TextStyle(
                     color: Color(0xFF68A797),
@@ -36,17 +36,17 @@ class _BoasVindasState extends State<BoasVindas> {
                   ),
                 )),
             ),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Image.asset('assets/img/logo_medicos.png'),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text(
+            const Text(
               'Consulta Médica',
               style: TextStyle(
                 color: Color(0xFF68A797),
@@ -56,10 +56,10 @@ class _BoasVindasState extends State<BoasVindas> {
                 wordSpacing: 2,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               'Faça seu Agendamento',
               style: TextStyle(
                 color: Colors.black54,
@@ -69,24 +69,24 @@ class _BoasVindasState extends State<BoasVindas> {
                 wordSpacing: 2,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(width: 20,),
+                const SizedBox(width: 20,),
                 Material(
-                  color: Color(0xFF68A797),
+                  color: const Color(0xFF68A797),
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(
-                        builder: (context) => Login(),
+                        builder: (context) => const Login(),
                         ),
                         );
                     },
-                    child: Padding(
+                    child: const Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 30),
                       child: Text(
@@ -102,17 +102,17 @@ class _BoasVindasState extends State<BoasVindas> {
                 ),
                 Material(
                   color: Colors.white,
-                  shadowColor: Color(0xFF68A797),
+                  shadowColor: const Color(0xFF68A797),
                   elevation: 4,
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(
-                        builder: (context) => Cadastro(),
+                        builder: (context) => const Cadastro(),
                         ),
                         );
                     },
-                    child: Padding(
+                    child: const Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                       child: Text(
@@ -126,7 +126,7 @@ class _BoasVindasState extends State<BoasVindas> {
                     ),
                   ),
                 ),
-                SizedBox(width: 20,),
+                const SizedBox(width: 20,),
               ],
             ),
           ],

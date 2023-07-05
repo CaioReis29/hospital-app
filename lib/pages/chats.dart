@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_app/pages/chat_privado.dart';
+import 'package:hospital_app/pages/chat_private.dart';
 
 class Chats extends StatefulWidget {
   const Chats({super.key});
@@ -45,10 +45,10 @@ class _ChatsState extends State<Chats> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               'Mensagens',
@@ -58,17 +58,17 @@ class _ChatsState extends State<Chats> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Colors.black12,
                     blurRadius: 10,
@@ -79,19 +79,19 @@ class _ChatsState extends State<Chats> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 250,
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           hintText: 'Pesquisar',
                           border: InputBorder.none,
                         ),
                       ),
                     ),
                   ),
-                  Icon(
+                  const Icon(
                     Icons.search,
                     color: Color(0xFF68A797),
                   ),
@@ -99,17 +99,17 @@ class _ChatsState extends State<Chats> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               'Online',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           SizedBox(
@@ -120,10 +120,10 @@ class _ChatsState extends State<Chats> {
               shrinkWrap: true,
               itemBuilder: (context, index) {
                 return Container(
-                  margin: EdgeInsets.symmetric(horizontal: 12),
+                  margin: const EdgeInsets.symmetric(horizontal: 12),
                   width: 65,
                   height: 65,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.white,
                     boxShadow: [
@@ -138,7 +138,7 @@ class _ChatsState extends State<Chats> {
                     textDirection: TextDirection.rtl,
                     children: [
                       Center(
-                        child: Container(
+                        child: SizedBox(
                           width: 65,
                           height: 65,
                           child: ClipRRect(
@@ -151,16 +151,16 @@ class _ChatsState extends State<Chats> {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.all(4),
-                        padding: EdgeInsets.all(3),
+                        margin: const EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(3),
                         height: 20,
                         width: 20,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.circle,
                         ),
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.green,
                             shape: BoxShape.circle,
                           ),
@@ -172,8 +172,8 @@ class _ChatsState extends State<Chats> {
               },
             ),
           ),
-          SizedBox(height: 20,),
-          Padding(
+          const SizedBox(height: 20,),
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               'Conversas Recentes',
@@ -181,7 +181,7 @@ class _ChatsState extends State<Chats> {
             ),
           ),
           ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             itemCount: 12,
             shrinkWrap: true,
             itemBuilder: (context, index) {
@@ -190,7 +190,7 @@ class _ChatsState extends State<Chats> {
                 child: ListTile(
                   minVerticalPadding: 18,
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPrivado()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ChatPrivado()));
                   },
                   leading: CircleAvatar(
                     radius: 30,
@@ -200,12 +200,12 @@ class _ChatsState extends State<Chats> {
                   ),
                   title: Text(
                     nomeMedicos[index],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  subtitle: Text(
+                  subtitle: const Text(
                     'Boa tarde! Eu poderia fazer um agendamento?',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -214,7 +214,7 @@ class _ChatsState extends State<Chats> {
                       color: Colors.black54,
                     ),
                   ),
-                  trailing: Text(
+                  trailing: const Text(
                     '13:14',
                     style: TextStyle(
                       fontSize: 15,

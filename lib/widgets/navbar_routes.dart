@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hospital_app/pages/agendamentos.dart';
+import 'package:hospital_app/pages/schedules.dart';
 import 'package:hospital_app/pages/chats.dart';
-import 'package:hospital_app/pages/configuracoes.dart';
+import 'package:hospital_app/pages/settings.dart';
 import 'package:hospital_app/pages/home_page.dart';
 
 class NavbarRotas extends StatefulWidget {
@@ -17,9 +17,9 @@ class _NavbarRotasState extends State<NavbarRotas> {
 
   final _paginas = [
     HomePage(),
-    Chats(),
-    Calendario(),
-    Configuracoes(),
+    const Chats(),
+    const Calendario(),
+    const Configuracoes(),
   ];
 
   @override
@@ -27,14 +27,14 @@ class _NavbarRotasState extends State<NavbarRotas> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: _paginas[_cardSelecionado],
-      bottomNavigationBar: Container(
+      bottomNavigationBar: SizedBox(
         height: 80,
         child: BottomNavigationBar(
             backgroundColor: Colors.white,
             type: BottomNavigationBarType.fixed,
-            selectedItemColor: Color(0xFF68A797),
+            selectedItemColor: const Color(0xFF68A797),
             unselectedItemColor: Colors.black26,
-            selectedLabelStyle: TextStyle(
+            selectedLabelStyle: const TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 15,
             ),
@@ -44,7 +44,7 @@ class _NavbarRotasState extends State<NavbarRotas> {
                 _cardSelecionado = index;
               });
             },
-            items: [
+            items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home_rounded),
                 label: 'Home',

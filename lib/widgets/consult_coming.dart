@@ -6,34 +6,34 @@ class ConsultasProximas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(
+      padding: const EdgeInsets.symmetric(
         horizontal: 10,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             'Fale com o Doutor(a)',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(color: Colors.black12, blurRadius: 4, spreadRadius: 2)
               ],
             ),
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Container(
-                margin: EdgeInsets.only(bottom: 5),
+                margin: const EdgeInsets.only(bottom: 5),
                 child: Column(
                   children: [
-                    ListTile(
+                    const ListTile(
                       title: Text(
                         "Dra. Rose Quartz",
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -43,7 +43,7 @@ class ConsultasProximas extends StatelessWidget {
                         backgroundImage: AssetImage('assets/img/medico1.jpg'),
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 15),
                       child: Divider(
                         thickness: 1,
@@ -53,7 +53,7 @@ class ConsultasProximas extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.calendar_month,
@@ -67,7 +67,7 @@ class ConsultasProximas extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.access_time_filled_outlined,
@@ -87,16 +87,16 @@ class ConsultasProximas extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(5),
+                              decoration: const BoxDecoration(
                                 color: Colors.green,
                                 shape: BoxShape.circle,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text(
+                            const Text(
                               'Confirmado',
                               style: TextStyle(color: Colors.black54),
                             ),
@@ -104,7 +104,7 @@ class ConsultasProximas extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Row(
@@ -114,12 +114,12 @@ class ConsultasProximas extends StatelessWidget {
                           onTap: () {},
                           child: Container(
                             width: 150,
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color(0xFFF4F6FA),
+                              color: const Color(0xFFF4F6FA),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 'Cancelar',
                                 style: TextStyle(
@@ -134,12 +134,12 @@ class ConsultasProximas extends StatelessWidget {
                           onTap: () {},
                           child: Container(
                             width: 150,
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color(0xFF68A797),
+                              color: const Color(0xFF68A797),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 'Agendar',
                                 style: TextStyle(
@@ -152,7 +152,7 @@ class ConsultasProximas extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                   ],
@@ -160,31 +160,31 @@ class ConsultasProximas extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             'Fale com o Doutor(a)',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(color: Colors.black12, blurRadius: 4, spreadRadius: 2)
               ],
             ),
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Container(
-                margin: EdgeInsets.only(bottom: 5),
+                margin: const EdgeInsets.only(bottom: 5),
                 child: Column(
                   children: [
-                    ListTile(
+                    const ListTile(
                       title: Text(
                         "Dra. Mariana Silva",
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -194,7 +194,7 @@ class ConsultasProximas extends StatelessWidget {
                         backgroundImage: AssetImage('assets/img/medico3.jpg'),
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 15),
                       child: Divider(
                         thickness: 1,
@@ -204,7 +204,7 @@ class ConsultasProximas extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.calendar_month,
@@ -218,7 +218,7 @@ class ConsultasProximas extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.access_time_filled_outlined,
@@ -238,16 +238,16 @@ class ConsultasProximas extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(5),
+                              decoration: const BoxDecoration(
                                 color: Colors.yellowAccent,
                                 shape: BoxShape.circle,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text(
+                            const Text(
                               'Pendente',
                               style: TextStyle(color: Colors.black54),
                             ),
@@ -255,7 +255,7 @@ class ConsultasProximas extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Row(
@@ -265,12 +265,12 @@ class ConsultasProximas extends StatelessWidget {
                           onTap: () {},
                           child: Container(
                             width: 150,
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color(0xFFF4F6FA),
+                              color: const Color(0xFFF4F6FA),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 'Cancelar',
                                 style: TextStyle(
@@ -285,12 +285,12 @@ class ConsultasProximas extends StatelessWidget {
                           onTap: () {},
                           child: Container(
                             width: 150,
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color(0xFF68A797),
+                              color: const Color(0xFF68A797),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 'Agendar',
                                 style: TextStyle(
@@ -303,7 +303,7 @@ class ConsultasProximas extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                   ],
@@ -311,31 +311,31 @@ class ConsultasProximas extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             'Fale com o Doutor(a)',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(color: Colors.black12, blurRadius: 4, spreadRadius: 2)
               ],
             ),
             child: SizedBox(
               width: MediaQuery.of(context).size.width,
               child: Container(
-                margin: EdgeInsets.only(bottom: 5),
+                margin: const EdgeInsets.only(bottom: 5),
                 child: Column(
                   children: [
-                    ListTile(
+                    const ListTile(
                       title: Text(
                         "Dr. Jorge Sampaio",
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -345,7 +345,7 @@ class ConsultasProximas extends StatelessWidget {
                         backgroundImage: AssetImage('assets/img/medico4.jpg'),
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 15),
                       child: Divider(
                         thickness: 1,
@@ -355,7 +355,7 @@ class ConsultasProximas extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.calendar_month,
@@ -369,7 +369,7 @@ class ConsultasProximas extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Row(
+                        const Row(
                           children: [
                             Icon(
                               Icons.access_time_filled_outlined,
@@ -389,16 +389,16 @@ class ConsultasProximas extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.all(5),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(5),
+                              decoration: const BoxDecoration(
                                 color: Colors.green,
                                 shape: BoxShape.circle,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
-                            Text(
+                            const Text(
                               'Confirmado',
                               style: TextStyle(color: Colors.black54),
                             ),
@@ -406,7 +406,7 @@ class ConsultasProximas extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Row(
@@ -416,12 +416,12 @@ class ConsultasProximas extends StatelessWidget {
                           onTap: () {},
                           child: Container(
                             width: 150,
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color(0xFFF4F6FA),
+                              color: const Color(0xFFF4F6FA),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 'Cancelar',
                                 style: TextStyle(
@@ -436,12 +436,12 @@ class ConsultasProximas extends StatelessWidget {
                           onTap: () {},
                           child: Container(
                             width: 150,
-                            padding: EdgeInsets.symmetric(vertical: 12),
+                            padding: const EdgeInsets.symmetric(vertical: 12),
                             decoration: BoxDecoration(
-                              color: Color(0xFF68A797),
+                              color: const Color(0xFF68A797),
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 'Agendar',
                                 style: TextStyle(
@@ -454,7 +454,7 @@ class ConsultasProximas extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                   ],

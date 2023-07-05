@@ -21,13 +21,13 @@ class _CadastroState extends State<Cadastro> {
             child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Image.asset('assets/img/logo_medicos.png'),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
@@ -36,7 +36,7 @@ class _CadastroState extends State<Cadastro> {
                     prefixIcon: Icon(Icons.person_pin_rounded)),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
@@ -45,7 +45,7 @@ class _CadastroState extends State<Cadastro> {
                     prefixIcon: Icon(Icons.email)),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
@@ -55,13 +55,13 @@ class _CadastroState extends State<Cadastro> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
               child: TextField(
                 obscureText: verSenha ? true : false,
                 decoration: InputDecoration(
                   labelText: 'Senha',
-                  border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.lock),
+                  border: const OutlineInputBorder(),
+                  prefixIcon: const Icon(Icons.lock),
                   suffixIcon: InkWell(
                       onTap: () {
                         if (verSenha == true) {
@@ -72,12 +72,12 @@ class _CadastroState extends State<Cadastro> {
                         setState(() {});
                       },
                       child: verSenha
-                          ? Icon(CupertinoIcons.eye_slash_fill)
-                          : Icon(CupertinoIcons.eye_solid)),
+                          ? const Icon(CupertinoIcons.eye_slash_fill)
+                          : const Icon(CupertinoIcons.eye_solid)),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -85,7 +85,7 @@ class _CadastroState extends State<Cadastro> {
               child: SizedBox(
                 width: double.infinity,
                 child: Material(
-                  color: Color(0xFF68A797),
+                  color: const Color(0xFF68A797),
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
@@ -96,7 +96,7 @@ class _CadastroState extends State<Cadastro> {
                       //   ),
                       // );
                     },
-                    child: Padding(
+                    child: const Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: 15, horizontal: 40),
                       child: Center(
@@ -114,13 +114,13 @@ class _CadastroState extends State<Cadastro> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 7,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'Já possui uma conta?',
                   style: TextStyle(
                       fontSize: 16,
@@ -132,11 +132,11 @@ class _CadastroState extends State<Cadastro> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Login(),
+                        builder: (context) => const Login(),
                       ),
                     );
                   },
-                  child: Text(
+                  child: const Text(
                     'Entrar',
                     style: TextStyle(
                       fontSize: 18,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_app/widgets/estrutura_chat.dart';
+import 'package:hospital_app/widgets/structure_chat.dart';
 
 class ChatPrivado extends StatefulWidget {
   const ChatPrivado({super.key});
@@ -13,12 +13,12 @@ class _ChatPrivadoState extends State<ChatPrivado> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(65),
+        preferredSize: const Size.fromHeight(65),
         child: AppBar(
-          backgroundColor: Color(0xFF68A797),
+          backgroundColor: const Color(0xFF68A797),
           leadingWidth: 20,
-          title: Padding(
-            padding: const EdgeInsets.only(top: 10),
+          title: const Padding(
+            padding: EdgeInsets.only(top: 10),
             child: Row(
               children: [
                 CircleAvatar(
@@ -42,7 +42,7 @@ class _ChatPrivadoState extends State<ChatPrivado> {
               ],
             ),
           ),
-          actions: [
+          actions: const [
             Padding(
               padding: EdgeInsets.only(top: 8, right: 15),
               child: Icon(
@@ -72,12 +72,12 @@ class _ChatPrivadoState extends State<ChatPrivado> {
       ),
       body: ListView.builder(
         itemCount: 1,
-        padding: EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
-        itemBuilder: (context, index) => EstruturaChat(),
+        padding: const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
+        itemBuilder: (context, index) => const EstruturaChat(),
         ),
         bottomSheet: Container(
           height: 65,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             boxShadow: [
               BoxShadow(
@@ -89,33 +89,33 @@ class _ChatPrivadoState extends State<ChatPrivado> {
           ),
           child: Row(
             children: [
-              Padding(padding: EdgeInsets.only(left: 8),
+              const Padding(padding: EdgeInsets.only(left: 8),
               child: Icon(
                 Icons.add,
                 size: 30,
               ),
               ),
-              Padding(padding: EdgeInsets.only(left: 5),
+              Padding(padding: const EdgeInsets.only(left: 5),
               child: Icon(
                 Icons.emoji_emotions_outlined,
                 size: 30,
                 color: Colors.yellow.shade500,
               ),
               ),
-              Padding(padding: EdgeInsets.only(left: 10),
+              Padding(padding: const EdgeInsets.only(left: 10),
               child: Container(
                 alignment: Alignment.centerRight,
                 width: MediaQuery.of(context).size.width / 1.6,
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'Digite uma Mensagem',
                     border: InputBorder.none,
                   ),
                 ),
               ),
               ),
-              Spacer(),
-              Padding(padding: EdgeInsets.only(right: 10),
+              const Spacer(),
+              const Padding(padding: EdgeInsets.only(right: 10),
               child: Icon(
                 Icons.send,
                 size: 30,

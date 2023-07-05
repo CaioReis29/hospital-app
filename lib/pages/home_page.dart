@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hospital_app/pages/visualizar_medico.dart';
+import 'package:hospital_app/pages/view_doctor.dart';
 
 class HomePage extends StatelessWidget {
-  List sintomas = [
+
+  final List<String> sintomas = [
     "Febre",
     "Congestão nasal",
     "Tosse",
@@ -10,44 +11,46 @@ class HomePage extends StatelessWidget {
     "Dor de cabeça"
   ];
 
-  List imagens = [
+  final List<String> imagens = [
     "medico1.jpg",
     "medico2.jpg",
     "medico3.jpg",
     "medico4.jpg",
   ];
 
-  List nomeMedicos = [
+  final List<String> nomeMedicos = [
     "Dra. Rose Quartz",
     "Dr. Lucas Augusto",
     "Dra. Mariana Silva",
     "Dr. Jorge Sampaio",
   ];
 
-  List tipoMedico = [
+  final List<String> tipoMedico = [
     "Cardiologista",
     "Urologista",
     "Clínica Geral",
     "Demartologista",
   ];
 
-  List classificacaoMedico = [
+  final List<String> classificacaoMedico = [
     "5.0",
     "4.9",
     "4.8",
     "4.7",
   ];
 
+  HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: EdgeInsets.only(top: 40),
-      child: Column(
+      padding:  const EdgeInsets.only(top: 40),
+      child: Column( 
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-              child: Row(
+           const Padding(
+            padding:  EdgeInsets.symmetric(horizontal: 15),
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -61,7 +64,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Row(
@@ -70,12 +73,12 @@ class HomePage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-                  margin: EdgeInsets.symmetric(horizontal: 2),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                  margin: const EdgeInsets.symmetric(horizontal: 2),
                   decoration: BoxDecoration(
-                    color: Color(0xFF68A797),
+                    color: const Color(0xFF68A797),
                     borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black12,
                         blurRadius: 6,
@@ -87,21 +90,21 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.all(8),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.all(8),
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.circle,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                           color: Color(0xFF68A797),
                           size: 40,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
-                      Container(
+                      const SizedBox(
                         width: 150,
                         child: Text(
                           'Visita Clínica',
@@ -111,10 +114,10 @@ class HomePage extends StatelessWidget {
                               fontWeight: FontWeight.w500),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
-                      Text(
+                      const Text(
                         'Marque uma Consulta',
                         style: TextStyle(
                           color: Colors.white60,
@@ -127,11 +130,11 @@ class HomePage extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black12,
                         blurRadius: 6,
@@ -143,32 +146,32 @@ class HomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                        margin: EdgeInsets.symmetric(horizontal: 5),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        margin: const EdgeInsets.symmetric(horizontal: 5),
+                        decoration: const BoxDecoration(
                           color: Color.fromARGB(255, 224, 250, 242),
                           shape: BoxShape.circle,
                         ),
-                        child: Icon(
+                        child: const Icon(
                           color: Color(0xFF68A797),
                           Icons.home,
                           size: 30,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Text(
+                      const Text(
                         'Visita Domiciliar',
                         style: TextStyle(
                             fontSize: 18,
                             color: Colors.black,
                             fontWeight: FontWeight.w500),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
-                      Container(
+                      const SizedBox(
                         width: 150,
                         child: Text(
                           'Marque consulta em casa',
@@ -185,8 +188,8 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 25,),
-          Padding(padding: EdgeInsets.only(left: 15),
+          const SizedBox(height: 25,),
+          const Padding(padding: EdgeInsets.only(left: 15),
           child: Text(
             'Quais são os seus sintomas?',
             style: TextStyle(
@@ -203,12 +206,12 @@ class HomePage extends StatelessWidget {
             itemCount: sintomas.length,
             itemBuilder: (context, index) {
               return Container(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                padding: EdgeInsets.symmetric(horizontal: 25),
+                margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 25),
                 decoration: BoxDecoration(
-                  color: Color(0xFFF4F6FA),
+                  color: const Color(0xFFF4F6FA),
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
                       blurRadius: 4,
@@ -219,7 +222,7 @@ class HomePage extends StatelessWidget {
                 child: Center(
                   child: Text(
                     sintomas[index],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
                       color: Colors.black54,
@@ -230,8 +233,8 @@ class HomePage extends StatelessWidget {
             }
             ),
           ),
-          SizedBox(height: 15,),
-          Padding(padding: EdgeInsets.only(left: 15),
+          const SizedBox(height: 15,),
+          const Padding(padding: EdgeInsets.only(left: 15),
           child: Text(
             'Médicos Populares',
             style: TextStyle(
@@ -242,12 +245,12 @@ class HomePage extends StatelessWidget {
           ),
           ),
           GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               ),
               itemCount: 4,
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(), 
+              physics: const NeverScrollableScrollPhysics(), 
             itemBuilder: (context, index) {
               return InkWell(
                 onTap: (){
@@ -259,12 +262,12 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: Container(
-                  margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.symmetric(vertical: 10),
+                  margin: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         color: Colors.black12,
                         blurRadius: 4,
@@ -281,7 +284,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Text(
                         nomeMedicos[index],
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w500,
                           color: Colors.black54
@@ -289,7 +292,7 @@ class HomePage extends StatelessWidget {
                       ),
                       Text(
                         tipoMedico[index],
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.black45,
                           fontWeight: FontWeight.w500,
                           fontSize: 15,
@@ -299,13 +302,13 @@ class HomePage extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.star,
                             color: Colors.amber,
                           ),
                           Text(
                             classificacaoMedico[index],
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black45,
                             ),
                           ),
